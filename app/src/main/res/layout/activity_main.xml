@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.myth.videofilter.ui.MainActivity">
+
+
+    <com.myth.videofilter.ui.VideoFilterView
+        android:id="@+id/video_filter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/filter_strength"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_filter_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="100"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        >
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:scaleType="center"
+            android:src="@drawable/ic_camera_filter"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/control"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:scaleType="center"
+            android:src="@drawable/icon_play_controller"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:scaleType="center"
+            android:src="@drawable/icon_save_selector"></ImageView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_filter"
+        layout="@layout/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
+
+    <include
+        android:id="@+id/layout_saving"
+        layout="@layout/layout_saving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_filter_view"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

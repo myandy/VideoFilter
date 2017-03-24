@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="filter_color_green_dark">#568f35</color>
+
+    <drawable name="sticker_item_background">#ededed</drawable>
+
+    <color name="filter_category_greenish_dummy">#ffb1c0c2</color>
+    <color name="filter_category_greenish_normal">#ff7bc4c5</color>
+
+    <color name="photomovie_blue">#00a1ff</color>
+    <color name="photomovie_progress_down">@color/photomovie_blue</color>
+    <color name="photomovie_progress_back">#d8d8d8</color>
+
+</resources>

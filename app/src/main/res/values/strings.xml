@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VideoFilter</string>
+
+
+    <string name="filter_none">原图</string>
+    <string name="filter_adore">Adore</string>
+    <string name="filter_heart">Heart</string>
+    <string name="filter_perfume">Perfume</string>
+    <string name="filter_responsible">Responsible</string>
+    <string name="saving">正在保存视频</string>
+
+</resources>
