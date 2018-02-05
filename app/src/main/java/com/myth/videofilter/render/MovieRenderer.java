@@ -4,6 +4,7 @@ package com.myth.videofilter.render;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
+import android.opengl.GLES20;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Surface;
@@ -189,7 +190,7 @@ public class MovieRenderer implements SurfaceTexture.OnFrameAvailableListener, I
     @Override
     public void surfaceCreated() {
         Log.d(TAG, "surfaceCreated");
-
+        GLES20.glClearColor(0f, 0f, 0f, 0f);
         mVideoFilter = new VideoFilter(mContext);
         mVideoFilter.init();
         mVideoFilter.getInitTextureId();
@@ -227,6 +228,7 @@ public class MovieRenderer implements SurfaceTexture.OnFrameAvailableListener, I
 
     @Override
     public void doFrame() {
+        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
         runPendingOnDrawTasks();
         synchronized (this) {
             if (mFrameAvailable) {
