@@ -1,4 +1,4 @@
-# frameplayer
+# VideoFilter
 Android video filters base on OpenGL,it can save video with filter.
 
 
