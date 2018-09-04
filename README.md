@@ -1,6 +1,9 @@
 # frameplayer
 Android video filters base on OpenGL,it can save video with filter.
 
+
+![image](show.gif)
+
 License
 =======
 
