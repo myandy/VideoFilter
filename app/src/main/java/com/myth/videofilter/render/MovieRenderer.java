@@ -93,7 +93,6 @@ public class MovieRenderer implements SurfaceTexture.OnFrameAvailableListener, I
         if (mNeedRestart) {
             mFrame = 0;
             mIsPlaying = true;
-            surfaceCreated();
             surfaceChanged(mWidth, mHeight);
             mNeedRestart = false;
         } else {
