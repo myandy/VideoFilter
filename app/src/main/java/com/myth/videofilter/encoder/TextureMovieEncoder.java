@@ -266,7 +266,7 @@ public abstract class TextureMovieEncoder implements Runnable, IMovieRenderer {
         mVideoEncoder.drainEncoder(false);
 
         doFrame();
-        mInputWindowSurface.setPresentationTime(timestampNanos);
+        mInputWindowSurface.setPresentationTime(timestampNanos / 1000L);
         mInputWindowSurface.swapBuffers();
     }
 
